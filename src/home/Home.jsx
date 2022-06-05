@@ -1,12 +1,15 @@
 import React from "react";
+import "./Home.css";
 import Welcome from "./welcome/Welcome";
 import Techs from "./techs/Techs";
 
 const Home = () => {
   return (
     <>
-      <Welcome />
-      <Techs />
+      <div className="home-content">
+        <Welcome />
+        <Techs />
+      </div>
     </>
   );
 };

@@ -1,6 +1,7 @@
 body {
-  cursor: default;
   background-color: #121212;
+  height: 100vh;
+  cursor: default;
   color: #fff;
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif

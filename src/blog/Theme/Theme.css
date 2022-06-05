@@ -1,0 +1,22 @@
+.sect-tech {
+  margin: 20px;
+  background-color: #202020;
+  width: 35%;
+  display: inline-block;
+  text-align: center;
+  transition: .4s ease-out;
+  cursor: pointer;
+}
+.sect-tech:hover {
+  background-color: #161616;
+  transform: translateY(-10px);
+}
+.title, .section, .cont {
+  margin: 15px;
+}
+.img-blog {
+  max-height: 250px;
+  max-width: 150px;
+  
+  min-width: 150px;
+}

@@ -1,14 +1,14 @@
 import React from "react";
 import "./Techs.css";
-import html from "./icons/html.png";
-import css from "./icons/css-3.png";
-import js from "./icons/js.png";
-import react from "./icons/physics.png";
-import java from "./icons/java.png";
-import spring from "./icons/spring.png";
-import python from "./icons/python.png";
-import mysql from "./icons/mysql.png";
-import terminal from "./icons/terminal.png";
+import html from "../../icons/html.png";
+import css from "../../icons/css-3.png";
+import js from "../../icons/js.png";
+import react from "../../icons/physics.png";
+import java from "../../icons/java.svg";
+import spring from "../../icons/spring.png";
+import python from "../../icons/python.png";
+import mysql from "../../icons/mysql.png";
+import terminal from "../../icons/terminal.png";
 
 const Blog = () => {
   return (

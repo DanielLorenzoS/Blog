@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./Roadmap.css"
 
 const MyRoadmap = () => {
   return (
     <>
-     Roadmap
+      <div className="cont-roadmap">
+        Roadmap
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default MyRoadmap
+export default MyRoadmap;

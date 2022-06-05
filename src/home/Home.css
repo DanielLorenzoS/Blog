@@ -1,0 +1,8 @@
+.home-content {
+  background-image: url("../icons/Animated\ Shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5vh;
+}
