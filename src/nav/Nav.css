@@ -15,22 +15,14 @@
 .navs {
   margin-right: 20px;
 }
-.nav1,
-.nav2,
-.nav3,
-.nav4,
-.nav5 {
+.nav-h2 {
   display: inline-block;
   margin: 0 30px 0 30px;
   cursor: pointer;
   transition: 0.1s ease-out;
   color: #fff;
 }
-.nav1::after,
-.nav2::after,
-.nav3::after,
-.nav4::after,
-.nav5::after {
+.nav-h2::after{
   content: "";
   display: block;
   width: 0%;
@@ -38,17 +30,9 @@
   background: #2020ff;
   transition: 0.5s ease-in;
 }
-.nav1:hover::after,
-.nav2:hover::after,
-.nav3:hover::after,
-.nav4:hover::after,
-.nav5:hover::after {
+.nav-h2:hover::after{
   width: 100%;
 }
-.nav1:hover,
-.nav2:hover,
-.nav3:hover,
-.nav4:hover,
-.nav5:hover {
+.nav-h2:hover{
   color: #264de4;
 }

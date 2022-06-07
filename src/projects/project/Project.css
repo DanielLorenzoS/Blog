@@ -1,0 +1,37 @@
+.cont-java {
+  margin: auto;
+  margin-top: 45px;
+  padding: 10px;
+  width: 60%;
+  height: 20vh;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.description {
+  opacity: 0;
+}
+.cont-java:hover .description {
+  opacity: 1;
+}
+.visit {
+  font-size: 22px;
+  text-decoration: none;
+  border: none;
+  margin-top: -60px;
+  padding: 10px;
+  background-color: #042297;
+  color: #fff;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.cont-java:hover .visit {
+    margin-top: 1.5%;
+}
+.cont-java,
+.description,
+.visit {
+  transition: 0.8s ease-in-out;
+}
