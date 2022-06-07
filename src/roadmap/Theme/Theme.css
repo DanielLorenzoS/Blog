@@ -1,22 +1,38 @@
 .sect-tech {
   margin: 20px;
   background-color: #202020;
-  width: 35%;
+  width: 28%;
+  height: 30vh;
   display: inline-block;
   text-align: center;
-  transition: .4s ease-out;
+  transition: 0.4s ease;
   cursor: pointer;
+}
+.sect-tech:nth-child(6){
+  margin-top: -20px;
 }
 .sect-tech:hover {
   background-color: #161616;
   transform: translateY(-10px);
 }
-.title, .section, .cont {
+.title,
+.section,
+.cont {
   margin: 15px;
 }
 .img-blog {
-  max-height: 250px;
-  max-width: 150px;
-  
-  min-width: 150px;
+  max-height: 200px;
+  max-width: 100px;
+
+  min-width: 100px;
+}
+.link {
+  text-decoration: none;
+}
+.nav-tech {
+  color: #fff;
+  transition: .5s ease;
+}
+.sect-tech:hover .nav-tech{
+  color: #335cff;
 }

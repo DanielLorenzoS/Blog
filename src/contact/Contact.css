@@ -6,3 +6,9 @@
     height: 89vh;
   }
   
+  .interested {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

@@ -7,7 +7,7 @@ import react from "../../icons/physics.png";
 import java from "../../icons/java.svg";
 import spring from "../../icons/spring.png";
 import python from "../../icons/python.png";
-import mysql from "../../icons/mysql.png";
+import mysql from "../../icons/mysql.svg";
 import terminal from "../../icons/terminal.png";
 
 const Blog = () => {

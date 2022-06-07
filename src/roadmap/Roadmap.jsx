@@ -8,7 +8,7 @@ import react from "../icons/physics.png";
 import java from "../icons/java.svg";
 import spring from "../icons/spring.png";
 import python from "../icons/python.png";
-import mysql from "../icons/mysql.png";
+import mysql from "../icons/mysql.svg";
 import terminal from "../icons/terminal.png";
 
 const Blog = () => {
@@ -16,49 +16,58 @@ const Blog = () => {
     <>
       <div className="publics">
         <Theme
-          title={"Terminal"}
-          image={terminal}
-          cont={"What were my first steps?"}
+          title={"Java"}
+          image={java}
+          url={"/java"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"HTML"}
           image={html}
-          cont={"What were my first steps?"}
+          url={"/html"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"CSS"}
           image={css}
-          cont={"What were my first steps?"}
+          url={"/css"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"JavaScript"}
           image={js}
-          cont={"What were my first steps?"}
+          url={"/javascript"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"React.js"}
           image={react}
-          cont={"What were my first steps?"}
-        />
-        <Theme
-          title={"Java"}
-          image={java}
-          cont={"What were my first steps?"}
+          url={"/react"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"Spring"}
           image={spring}
-          cont={"What were my first steps?"}
+          url={"/spring"}
+          cont={"Watch this roadmap"}
+        />
+        <Theme
+          title={"Terminal"}
+          image={terminal}
+          url={"/terminal"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"Python"}
           image={python}
-          cont={"What were my first steps?"}
+          url={"/python"}
+          cont={"Watch this roadmap"}
         />
         <Theme
           title={"MySQL"}
           image={mysql}
-          cont={"What were my first steps?"}
+          url={"/mysql"}
+          cont={"Watch this roadmap"}
         />
       </div>
     </>
