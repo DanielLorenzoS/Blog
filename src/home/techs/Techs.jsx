@@ -14,9 +14,9 @@ const Blog = () => {
   return (
     <>
       <div className="blog">
-        <h1>What do you find here?</h1>
+        <h1>What technologies have I used?</h1>
         <h2>
-          All my knowledge, problems and solutions on my career and projects
+          All my knowledge, problems and solutions on my career, projects and job
         </h2>
         <div className="imgs">
           <div className="pack">
@@ -24,9 +24,6 @@ const Blog = () => {
           </div>
           <div className="pack">
             <img className="icon" src={js} alt="js" />
-          </div>
-          <div className="pack">
-            <img className="icon" src={python} alt="python" />
           </div>
           <div className="pack">
             <img className="icon" src={mysql} alt="mysql" />
@@ -42,9 +39,6 @@ const Blog = () => {
           </div>
           <div className="pack">
             <img className="icon" src={spring} alt="spring" />
-          </div>
-          <div className="pack">
-            <img className="icon" src={terminal} alt="terminal" />
           </div>
         </div>
       </div>

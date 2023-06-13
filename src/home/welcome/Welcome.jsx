@@ -6,10 +6,10 @@ const Welcome = () => {
     <>
       <div className="welcome">
         <h1 className="wc">
-          Welcome to <span className="blue">LoreCode</span> website
+          Welcome to <span className="blue">Daniel Lorenzo</span> portfolio
         </h1>
         <h2 className="presentation">
-          I'm <span className="blue">Computer Engineering</span> College Student
+          I'm current <span className="blue">Computer Engineering</span> College Student
         </h2>
         <h2 className="presentation">
           I currently specialize in <span className="blue">Front End</span>{" "}

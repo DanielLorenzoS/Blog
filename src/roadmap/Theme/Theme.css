@@ -2,22 +2,17 @@
   margin: 20px;
   background-color: #202020;
   width: 28%;
-  height: 30vh;
+  
   display: inline-block;
   text-align: center;
   transition: 0.4s ease;
   cursor: pointer;
 }
-.sect-tech:nth-child(6){
-  margin-top: -20px;
-}
 .sect-tech:hover {
   background-color: #161616;
   transform: translateY(-10px);
 }
-.title,
-.section,
-.cont {
+.title {
   margin: 15px;
 }
 .img-blog {
