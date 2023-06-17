@@ -36,29 +36,26 @@
   position: absolute;
     
 }
+.pack:nth-child(1n)::after {
+  content: "Java";
+}
 .pack:nth-child(2n)::after {
   content: "JavaScript";
 }
 .pack:nth-child(3n)::after {
-  content: "Python";
-}
-.pack:nth-child(4n)::after {
   content: "MySQL";
 }
-.pack:nth-child(5n)::after {
+.pack:nth-child(4n)::after {
   content: "HTML";
 }
-.pack:nth-child(6n)::after {
+.pack:nth-child(5n)::after {
   content: "CSS";
 }
-.pack:nth-child(7n)::after {
+.pack:nth-child(6n)::after {
   content: "React.js";
 }
-.pack:nth-child(8n)::after {
+.pack:nth-child(7n)::after {
   content: "Spring";
-}
-.pack:nth-child(9n)::after {
-  content: "Terminal";
 }
 .pack:hover::after {
   margin-top: 0px;
@@ -70,5 +67,15 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 770px) {
+  .blog {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pack::after {
+    position: relative;
   }
 }

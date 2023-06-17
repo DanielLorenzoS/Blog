@@ -68,3 +68,11 @@
 .visit-hover {
   transition: 1s ease-in-out;
 }
+
+@media (max-width: 770px) {
+
+  .cont-java,
+  .cont-java-hover {
+    width: 100%;
+  }
+}

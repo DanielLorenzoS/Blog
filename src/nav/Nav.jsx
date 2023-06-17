@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 const Nav = () => {
 
@@ -8,6 +9,11 @@ const Nav = () => {
 
   const handleButtonClick = () => {
     setButtonClicked(!buttonClicked);
+    if (!buttonClicked) {
+      disableBodyScroll(document.body);
+    } else {
+      enableBodyScroll(document.body);
+    }
   };
 
   return (

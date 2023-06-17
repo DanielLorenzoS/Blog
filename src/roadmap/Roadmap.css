@@ -11,6 +11,8 @@ h1 {
   background-image: url("../icons/Meteor.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 .theme1 {
   background-color: #fff !important;
