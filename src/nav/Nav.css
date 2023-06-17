@@ -113,8 +113,17 @@
 
   .nav-res {
     position: absolute;
-    top: -50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    top: 5rem;
+    left: -50rem;
+    height: 90%;
+    width: 100%;
     transition: 0.5s ease-out;
+    opacity: .8;
   }
 
   .nav-res-clicked {
@@ -125,6 +134,7 @@
     align-items: center;
     background-color: #000;
     top: 5rem;
+    left: 0;
     height: 90%;
     width: 100%;
     transition: 0.5s ease-out;
