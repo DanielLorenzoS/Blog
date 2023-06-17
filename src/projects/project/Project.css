@@ -1,9 +1,7 @@
 .cont-java {
   margin: auto;
   margin-top: 45px;
-  padding: 15px 10px;
   width: 60%;
-  height: 21vh;
   background-color: #202020;
   display: flex;
   flex-direction: column;
@@ -11,17 +9,32 @@
   text-align: center;
   font-size: 24px;
 }
+
+.cont-java-hover {
+  margin: auto;
+  margin-top: 45px;
+  width: 60%;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
 .description {
   opacity: 0;
   font-size: 0;
 }
-.cont-java:hover {
-  height: 28vh;
-}
-.cont-java:hover .description {
+
+.description-hover {
   opacity: 1;
   font-size: 22px;
+  font-weight: 300;
+  padding: 0 20px;
+  text-align: justify;
 }
+
 .visit {
   width: 100%;
   font-size: 22px;
@@ -33,12 +46,25 @@
   border-radius: 5%;
   cursor: default;
 }
-.cont-java:hover .visit {
-    margin-top: 1.5%;
-    opacity: 0;
+
+.visit-hover {
+  width: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  background-color: #042297;
+  color: #fff;
+  border-radius: 5%;
+  cursor: default;
+  margin-top: 1.5%;
 }
+
 .cont-java,
 .description,
-.visit {
+.visit,
+.cont-java-hover,
+.description-hover,
+.visit-hover {
   transition: 1s ease-in-out;
 }

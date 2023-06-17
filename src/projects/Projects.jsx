@@ -3,7 +3,7 @@ import "./Projects.css";
 import Project from "./project/Project";
 
 const Portfolio = () => {
-  let text = "In this job I learned to modify Spring Boot services, understand the logic of React Native components and test some projects from the user's point of view";
+  let text = "According to the requirements, I supported in the layout, creation, or modification of components in both Angular and React Native. And I worked on the modification of Spring Boot and Quarkus services.";
   return (
     <>
       <div className="cont-projects">
