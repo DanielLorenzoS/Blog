@@ -7,3 +7,10 @@
   padding-top: 5vh;
 }
 
+@media (max-width: 770px) {
+  .home-content {
+    background-image: url("../icons/NotAnimated.png");
+    background-size: contain;
+    background-repeat: round;
+  }
+}
