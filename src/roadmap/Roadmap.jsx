@@ -23,7 +23,7 @@ const Blog = () => {
         />
         <Theme
           className="theme"
-          title={"PokeAPI CRUD React & Laravel"}
+          title={"PokeAPI CRUD React & Spring Boot"}
           url={"https://pokedex-oqxy.vercel.app/"}
         />
       </div>
