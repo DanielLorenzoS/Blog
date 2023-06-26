@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="line"></div>
           <h2 className="text-contact">Github</h2>
         </a>
-        <a className="interested" rel="noreferrer" target="_blank" href="https://sclrhyqklkswefokxqoq.supabase.co/storage/v1/object/sign/cv/CV%20-%20DanielLorenzo.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjdi9DViAtIERhbmllbExvcmVuem8ucGRmIiwiaWF0IjoxNjg3NjQ1NzY5LCJleHAiOjE3MTkxODE3Njl9.63tn1m8erSDr6plMaegRZhWsL8K7Iqqa78VX4b13Raw&t=2023-06-24T22%3A29%3A31.007Z">
+        <a className="interested" rel="noreferrer" target="_blank" href="https://sclrhyqklkswefokxqoq.supabase.co/storage/v1/object/sign/cv/CV%20-%20DanielLorenzo.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjdi9DViAtIERhbmllbExvcmVuem8ucGRmIiwiaWF0IjoxNjg3NzU0MzgxLCJleHAiOjE3MTkyOTAzODF9.lDMX1oXUtdkrUw2pcFZjcjxucSmFYGK_LTOzhVqgUKM&t=2023-06-26T04%3A39%3A52.858Z">
           <h2 className="text-contact">View CV</h2>
         </a>
       </div>
