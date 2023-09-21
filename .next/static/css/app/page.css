@@ -1,0 +1,101 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.page_container__jZF7q {
+  margin: auto;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  cursor: default;
+}
+
+.page_welcome__XzK6o {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.page_title__po7na {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.page_subtitle__YBgxm {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.page_blue__LHh_9 {
+  color: #264DE4;
+}
+
+.page_info__8WZDv {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_card__Cf__u {
+  background-color: #4c0027;
+  width: 30%;
+  height: 30vh;
+  font-size: 1.5rem;
+  font-weight: 100 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page_icons__WiTRk {
+  background-color: transparent;
+}
+
+.page_card__Cf__u:hover {
+  transform: translateY(-.6rem);
+  background-color: #5c0632;
+}
+
+@media (max-width: 770px) {
+  .page_welcome__XzK6o {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 649px) {
+  .page_info__8WZDv {
+    flex-direction: column;
+  }
+
+  .page_card__Cf__u {
+    width: 80%;
+    height: 20vh;
+  }
+
+  .page_title__po7na {
+    font-size: 2rem;
+  }
+
+  .page_subtitle__YBgxm {
+    display: none;
+  }
+}
