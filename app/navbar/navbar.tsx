@@ -75,16 +75,16 @@ export default function Navbar() {
                     }
                     onClick={handleButtonClick}
                 >
-                    <Link href="/">
+                    <Link href="/" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Home</h2>
                     </Link>
-                    <Link href="/roadmap">
+                    <Link href="/roadmap" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Projects</h2>
                     </Link>
-                    <Link href="/projects">
+                    <Link href="/projects" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Experience</h2>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="/contact" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Contact</h2>
                     </Link>
                 </div>

@@ -1,5 +1,6 @@
 .container {
   margin: auto;
+  height: 60vh;
   margin-top: 3rem;
   width: 100%;
   display: flex;
@@ -33,7 +34,7 @@
 }
 
 .blue {
-  color: #264DE4;
+  color: #097188;
 }
 
 .info {
@@ -57,18 +58,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .4s ease-in-out;
   cursor: pointer;
   text-decoration: none;
+  transition: .4s ease-in-out;
 }
 
 .icons {
   background-color: transparent;
+  transition: .4s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-.6rem);
   background-color: #5c0632;
+  color: #097188;
+}
+
+.card:hover .icons {
+  transform: rotateZ(25deg);
 }
 
 @media (max-width: 770px) {

@@ -17,7 +17,7 @@
   .nav-h1 {
     font-size: 33px;
     margin-left: 25px;
-    color: #264de4;
+    color: #097188;
     font-weight: 200;
   }
   
@@ -116,6 +116,11 @@
     .nav-h2 {
       margin-bottom: 4rem;
       font-size: 30px;
+      background-color: transparent;
+    }
+
+    .a {
+      background-color: transparent;
     }
   
     .nav-res {

@@ -1,0 +1,83 @@
+.container {
+    margin: auto;
+    height: 60vh;
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    line-height: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    cursor: default;
+    text-align: center;
+}
+
+.blue {
+    color: #097188;
+}
+
+.welcome {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    z-index: 1;
+    padding: 0 2rem;
+}
+
+
+.changing {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+}
+
+.view {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1000ms, transform 300ms;
+}
+
+.changingItem-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.changingItem-exit {
+    opacity: 1;
+}
+
+.another {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Estilo para el cuadro de carga */
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #097188;
+    transition: width 100ms ease-in-out;
+    border-radius: 2rem;
+    /* Ajusta la velocidad de la animación */
+}

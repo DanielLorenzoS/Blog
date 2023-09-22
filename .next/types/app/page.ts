@@ -1,4 +1,4 @@
-// File: /home/dani/Documentos/Blog/app/page.tsx
+// File: /home/lorepc/Documents/Blog/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

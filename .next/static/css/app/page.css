@@ -3,6 +3,7 @@
   \***************************************************************************************************************************************************************************************************************************************************************/
 .page_container__jZF7q {
   margin: auto;
+  height: 60vh;
   margin-top: 3rem;
   width: 100%;
   display: flex;
@@ -36,7 +37,7 @@
 }
 
 .page_blue__LHh_9 {
-  color: #264DE4;
+  color: #097188;
 }
 
 .page_info__8WZDv {
@@ -60,18 +61,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .4s ease-in-out;
   cursor: pointer;
   text-decoration: none;
+  transition: .4s ease-in-out;
 }
 
 .page_icons__WiTRk {
   background-color: transparent;
+  transition: .4s ease-in-out;
 }
 
 .page_card__Cf__u:hover {
   transform: translateY(-.6rem);
   background-color: #5c0632;
+  color: #097188;
+}
+
+.page_card__Cf__u:hover .page_icons__WiTRk {
+  transform: rotateZ(25deg);
 }
 
 @media (max-width: 770px) {
