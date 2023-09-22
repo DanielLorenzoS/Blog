@@ -69,14 +69,14 @@ const About = () => {
   const currentChanging = changingData[changingIndex];
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.welcome}>
         <h1 className={styles.title}>
           Soy <span className={styles.blue}>{nombre}</span>
         </h1>
         <h2 className={styles.subtitle}>
           Estudiante de <span className={styles.blue}>{carrera} </span>
-          especializado en <span className={styles.blue}>Desarrollo de Software </span> {especializacion}.
+          especializado en <span className={styles.blue}>Desarrollo Backend </span>
         </h2>
       </div>
       <div className={styles.welcome}>
@@ -90,7 +90,7 @@ const About = () => {
           <div className={styles.progressBar} style={{ width: `${progress}%` }} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

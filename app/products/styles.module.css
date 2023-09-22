@@ -1,0 +1,58 @@
+.container {
+    margin: auto;
+    height: 60vh;
+    margin-top: 6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    line-height: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    cursor: default;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.text {
+    grid-column: span 3;
+    padding: 0 2rem;
+    list-style: none;
+}
+
+.h1 {
+    transition: all 0.5s ease-in-out;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.imageContainer {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin: auto;
+    display: none;
+    filter: blur(0.15rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.image:hover {
+    filter: blur(0);
+}
+
+.selected {
+    display: block;
+}
+
+.textSelected {
+    font-size: 2rem;
+    list-style-image: url('../../public/arrow-big-right.svg');
+    list-style-position: inside;
+    opacity: 1;
+}

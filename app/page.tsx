@@ -2,13 +2,13 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import info from '../public/info.svg'
 import productos from '../public/productos.svg'
-import contacto from '../public/contact.svg'
+import contacto from '../public/phone.svg'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <div className={styles.welcome}>
           <h1 className={styles.title}>
             Bienvenid@ a <span className={styles.blue}>LoreDev</span>
@@ -31,7 +31,7 @@ export default function Home() {
             <Image src={contacto} width={50} height={50} alt='info' className={styles.icons} />
           </Link>
         </div>
-      </div>
+      </section>
     </>
   )
 }

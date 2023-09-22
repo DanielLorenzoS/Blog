@@ -3,8 +3,8 @@
   \***************************************************************************************************************************************************************************************************************************************************************/
 .page_container__jZF7q {
   margin: auto;
-  height: 60vh;
-  margin-top: 3rem;
+  height: 70vh;
+  margin-top: 4rem;
   width: 100%;
   display: flex;
   gap: 4rem;
@@ -43,7 +43,7 @@
 .page_info__8WZDv {
   width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -51,8 +51,8 @@
 
 .page_card__Cf__u {
   background-color: #4c0027;
-  width: 30%;
-  height: 30vh;
+  width: 18rem;
+  height: 18rem;
   font-size: 1.5rem;
   font-weight: 100 !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
@@ -64,6 +64,14 @@
   cursor: pointer;
   text-decoration: none;
   transition: .4s ease-in-out;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  border-radius: 100%;
+}
+
+.page_card__Cf__u:nth-child(2) {
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
 
 .page_icons__WiTRk {

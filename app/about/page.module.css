@@ -17,6 +17,7 @@
 
 .blue {
     color: #097188;
+    background-color: transparent;
 }
 
 .welcome {
@@ -36,10 +37,13 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .title {
     width: 100%;
+    background-color: transparent;
 }
 
 .view {
@@ -68,16 +72,17 @@
 /* Estilo para el cuadro de carga */
 .progress {
     width: 100%;
-    height: 10px;
-    background-color: #ccc;
-    position: relative;
+    height: 1rem;
+    bottom: 0;
+    background-color: transparent;
+    position: absolute;
     border-radius: 2rem;
+    z-index: 1;
 }
 
 .progressBar {
     height: 100%;
     background-color: #097188;
     transition: width 100ms ease-in-out;
-    border-radius: 2rem;
     /* Ajusta la velocidad de la animación */
 }
