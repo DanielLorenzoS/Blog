@@ -1,6 +1,5 @@
 .container {
     margin: auto;
-    height: 60vh;
     margin-top: 6rem;
     width: 100%;
     display: flex;
@@ -27,7 +26,6 @@
     flex-direction: column;
     gap: 3rem;
     text-align: center;
-    z-index: 1;
     padding: 0 2rem;
 }
 
@@ -41,7 +39,8 @@
     background-color: transparent;
 }
 
-.title {
+.title,
+.subtitle {
     width: 100%;
     background-color: transparent;
 }
@@ -68,11 +67,52 @@
     transition: opacity 300ms, transform 300ms;
 }
 
+.buttonsContainer {
+    width: 100%;
+    background-color: transparent;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    overflow-x: auto;
+    width: 100%;
+    min-width: 930px;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+
+.buttons button {
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    background-color: #101010;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 300ms;
+}
+
+.buttonActive {
+    color: #097188 !important;
+}
 
 /* Estilo para el cuadro de carga */
 .progress {
     width: 100%;
-    height: 1rem;
+    height: 91%;
     bottom: 0;
     background-color: transparent;
     position: absolute;
@@ -82,7 +122,21 @@
 
 .progressBar {
     height: 100%;
-    background-color: #097188;
+    background-color: #101010;
     transition: width 100ms ease-in-out;
-    /* Ajusta la velocidad de la animación */
+}
+
+@media (width < 930px) {
+    .buttons {
+        padding: 0 1rem;
+    }
+
+}
+
+@media (width < 1000px) {
+
+    .buttons {
+        overflow-x: auto;
+    }
+
 }

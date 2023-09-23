@@ -11,19 +11,29 @@
   text-align: center;
   font-family: monospace;
   cursor: default;
+  overflow: hidden;
 }
 
 .welcome {
   margin: auto;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   gap: 3rem;
   text-align: center;
 }
 
+.logo {
+  padding: 1rem;
+  border-radius: 10rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
   font-weight: 400;
 }
@@ -60,10 +70,22 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  transition: .4s ease-in-out;
   margin-top: 0;
   margin-bottom: 4rem;
   border-radius: 100%;
+  transform: translateY(30rem) rotateZ(25deg);
+  transition: .4s ease-in-out;
+  animation: move .6s ease-in-out .5s both;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(30rem) rotateZ(25deg);    
+  }
+
+  100% {
+    transform: translateY(-2rem) rotateZ(0);
+  }
 }
 
 .card:nth-child(2) {
@@ -86,28 +108,51 @@
   transform: rotateZ(25deg);
 }
 
-@media (max-width: 770px) {
+.responsiveInfo {
+  display: none;
+}
+
+@media (width < 900px) {
   .welcome {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .responsiveInfo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+  }
+  .cardR {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    width: 33%;
+    padding: 1rem;
+  }
+  .cardR:nth-child(2) {
+    background-color: #252525;
+  }
+  .cardR:nth-child(2) .iconsR {
+    background-color: transparent;
   }
 }
 
-@media (width < 650px) {
-  .info {
+@media (width < 530px) {
+  .cardR {
     flex-direction: column;
-  }
-
-  .card {
-    width: 80%;
-    height: 20vh;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    display: none;
   }
 }
