@@ -78,10 +78,10 @@ export default function Navbar() {
                     <Link href="/" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Inicio</h2>
                     </Link>
-                    <Link href="/roadmap" className={styles.a}>
+                    <Link href="/about" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Sobre mí</h2>
                     </Link>
-                    <Link href="/projects" className={styles.a}>
+                    <Link href="/products" className={styles.a}>
                         <h2 className={styles["nav-h2"]}>Proyectos</h2>
                     </Link>
                     <Link href="/contact" className={styles.a}>
