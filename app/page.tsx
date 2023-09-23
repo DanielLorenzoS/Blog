@@ -32,15 +32,15 @@ export default function Home() {
         </div>
         <div className={styles.responsiveInfo}>
           <Link href="/about" className={styles.cardR}>
-            Acerca de mí
+            
             <Image src={info} width={50} height={50} alt='info' className={styles.iconsR} />
           </Link>
           <Link href="/products" className={styles.cardR}>
-            Proyectos
+            
             <Image src={productos} width={50} height={50} alt='info' className={styles.iconsR} />
           </Link>
           <Link href="/contact" className={styles.cardR}>
-            Contacto
+            
             <Image src={contacto} width={50} height={50} alt='info' className={styles.iconsR} />
           </Link>
         </div>
