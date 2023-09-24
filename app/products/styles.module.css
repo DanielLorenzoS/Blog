@@ -1,10 +1,10 @@
 .container {
     margin: auto;
-    height: 60vh;
+    height: 80vh;
     margin-top: 6rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 4rem;
     line-height: 3rem;
     justify-content: center;
@@ -16,34 +16,52 @@
     padding: 0 2rem;
 }
 
+.blue {
+    color: #097188;
+    background-color: transparent;
+}
+
 .text {
     grid-column: span 3;
     padding: 0 2rem;
     list-style: none;
 }
 
+.txt {
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.txt span {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
 .h1 {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     opacity: .5;
     cursor: pointer;
 }
 
 .imageContainer {
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .image {
     margin: auto;
     display: none;
-    filter: blur(0.15rem);
     transition: all 0.5s ease-in-out;
-}
-
-.image:hover {
-    filter: blur(0);
 }
 
 .selected {
@@ -55,4 +73,46 @@
     list-style-image: url('../../public/arrow-big-right.svg');
     list-style-position: inside;
     opacity: 1;
+}
+
+.selectContainer {
+    display: none;
+}
+
+.select {
+    padding: 1rem .2rem;
+    width: auto;
+    border-radius: .4rem;
+}
+
+.option {
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+
+@media (width < 900px) {
+    .text {
+        grid-column: span 5;
+        text-align: center;
+    }
+    .imageContainer {
+        grid-column: span 5;
+    }
+}
+
+@media (width < 400px) {
+    .container {
+        gap: 1rem;
+        height: 70vh;
+    }
+    .text {
+        display: none;
+    }
+    .selectContainer {
+        display: block;
+        grid-column: span 5;
+        text-align: center;
+    }
 }
