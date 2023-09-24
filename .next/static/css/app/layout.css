@@ -39,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 5;
   cursor: default;

@@ -57,7 +57,7 @@
 }
 
 .card {
-  background-color: #4c0027;
+  background-image: linear-gradient(#5c0632, #381125, #151515);
   width: 18rem;
   height: 18rem;
   font-size: 1.5rem;
@@ -96,12 +96,6 @@
 .icons {
   background-color: transparent;
   transition: .4s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-.6rem);
-  background-color: #5c0632;
-  color: #097188;
 }
 
 .card:hover .icons {
