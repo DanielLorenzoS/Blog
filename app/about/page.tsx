@@ -12,15 +12,13 @@ const About = () => {
     'Tecnologías como Java, Spring Boot, JavaScript, Angular, React, React Native y MySQL';
   const experiencia =
     'He trabajado en interfaces de proyectos, en la lógica de las mismas, así como en creación y modificación de servicios en GETechnologies';
-  const musica = 'Me gusta escuchar distintos géneros, desde Pop hasta Indie, pasando por Baladas y Soundtracks';
-  const videojuegos = 'En mis juegos favoritos están Minecraft, Max Payne, Dead Space, Portal, entre muchos otros';
+  const pasatiempos = 'Me gusta la programación en diversos enfoques, des y ensamble de equipos, todo tipo de videojuegos como Minecraft, Max Payne, Portal, Hollow Knight y muchos más';
 
   const changingData = [
     { title: '¿Cuál es mi experiencia?', content: experiencia },
     { title: '¿Qué tecnologías sé manejar?', content: especializacion },
     { title: '¿Cuáles fueron mis estudios?', content: universidad },
-    { title: '¿Qué música escucho?', content: musica },
-    { title: '¿Qué videojuegos me gustan?', content: videojuegos },
+    { title: '¿Cuáles son mis pasatiempos?', content: pasatiempos },
   ];
 
   const [changingIndex, setChangingIndex] = useState(0);
@@ -91,11 +89,10 @@ const About = () => {
       </div>
       <div className={styles.buttonsContainer}>
         <div className={styles.buttons}>
-          <button className={changingIndex === 0 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(0)}>Estudios</button>
+          <button className={changingIndex === 0 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(0)}>Experiencia</button>
           <button className={changingIndex === 1 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(1)}>Tecnologías</button>
-          <button className={changingIndex === 2 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(2)}>Experiencia</button>
-          <button className={changingIndex === 3 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(3)}>Música</button>
-          <button className={changingIndex === 4 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(4)}>Videojuegos</button>
+          <button className={changingIndex === 2 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(2)}>Estudios</button>
+          <button className={changingIndex === 3 ? styles.buttonActive : ''} onClick={() => setIndexChangingValue(3)}>Pasatiempos</button>
         </div>
       </div>
       <div className={styles.welcome}>
