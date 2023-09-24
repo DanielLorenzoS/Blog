@@ -127,8 +127,15 @@
 }
 
 @media (width < 930px) {
+    .container {
+        margin-top: 1rem;
+    }
+    .buttonsContainer {
+        padding: 0;
+    }
     .buttons {
         padding: 0 1rem;
+        background-color: #252525;
     }
 
 }

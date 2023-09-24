@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    z-index: 4;
+    z-index: 5;
     cursor: default;
   }
 
@@ -136,6 +136,7 @@
       width: 100%;
       transition: 0.5s ease-out;
       opacity: .8;
+      z-index: 5;
     }
   
     .nav-res-clicked {
@@ -150,7 +151,7 @@
       height: 90%;
       width: 100%;
       transition: 0.5s ease-out;
-      z-index: 4;
+      z-index: 5;
       opacity: .8;
     }
   }
