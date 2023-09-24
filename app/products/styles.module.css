@@ -89,6 +89,8 @@
     padding: .5rem 1rem;
     border-radius: .4rem;
     margin: .5rem 0;
+    color: white;
+    background-color: #151515;
     cursor: pointer;
 }
 
