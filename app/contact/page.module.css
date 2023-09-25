@@ -132,8 +132,9 @@
 @media (width < 650px) {
     .container {
         margin-top: 8rem;
-        overflow: hidden;
+        overflow-x: hidden;
         padding: 0;
+        padding-top: 8rem;
     }
     .cssTyping p {
         white-space: wrap;
