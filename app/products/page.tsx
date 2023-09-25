@@ -78,7 +78,7 @@ const Products = () => {
         ))}
       </ul>
       <div className={styles.selectContainer}>
-        <label htmlFor="options">Selecciona una opción:</label>
+        <label htmlFor="options">Selecciona un proyecto:</label>
         <select
           className={styles.select}
           id="options"

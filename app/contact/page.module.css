@@ -1,0 +1,142 @@
+.container {
+    margin: auto;
+    height: 80vh;
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    line-height: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    cursor: default;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+/* .logoContainer {
+    grid-column: span 3;
+}
+
+.contactContainer {
+    grid-column: span 1;
+} */
+
+.contactContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #777;
+}
+
+.p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.icons {
+    border-top: 1px solid #777;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icons a {
+    transform: translateY(6rem);
+    opacity: 0;
+    animation: slideIn 1s both;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(6rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cssTyping p {
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cssTyping p:nth-child(1) {
+    width: 100%;
+    -webkit-animation: type 2s steps(40, end), blink 3s step-end infinite;
+    animation: type 2s steps(40, end), blink 3s step-end infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (width < 650px) {
+    .container {
+        margin-top: 8rem;
+        overflow: hidden;
+        padding: 0;
+    }
+    .cssTyping p {
+        white-space: wrap;
+        text-align: center;
+    }
+}
