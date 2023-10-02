@@ -1,7 +1,7 @@
 .container {
   margin: auto;
-  height: 70vh;
-  margin-top: 8rem;
+  /* height: 70vh; */
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   gap: 4rem;

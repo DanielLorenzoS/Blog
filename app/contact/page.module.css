@@ -1,7 +1,7 @@
 .container {
     margin: auto;
     height: 80vh;
-    margin-top: 6rem;
+    margin-top: 8rem;
     width: 100%;
     display: flex;
     gap: 4rem;
@@ -58,19 +58,19 @@
 }
 
 .icons a {
-    transform: translateY(6rem);
+    transform: translateY(6rem) rotate(90deg);
     opacity: 0;
     animation: slideIn 1s both;
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateY(6rem);
+        transform: translateY(6rem) rotate(90deg);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(0deg);
         opacity: 1;
     }
 }
