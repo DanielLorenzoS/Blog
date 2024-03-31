@@ -1,48 +1,73 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import info from '../public/info.svg'
-import productos from '../public/productos.svg'
-import contacto from '../public/phone.svg'
-import logo from '../public/LOREDEV (1).png'
-import Link from 'next/link'
+import logo from '../public/LOREDEV_LOGO.png'
 
 export default function Home() {
   return (
     <>
       <section className={styles.container}>
         <div className={styles.welcome}>
-          <h1 className={styles.title}>
-            LoreDev
-          </h1>
-          <Image className={styles.logo} src={logo} width={220} height={220} alt='logo' />
+          <div className={styles.info}>
+            <h1 className={styles.title}>
+              Daniel Lorenzo
+            </h1>
+            <h2 className={styles.subtitle}>Desarrollador <span className={styles.colorText}>Java</span></h2>
+          </div>
         </div>
-        <div className={styles.info}>
-          <Link href="/about" className={styles.card}>
-            Acerca de mí
-            <Image src={info} width={50} height={50} alt='info' className={styles.icons} />
-          </Link>
-          <Link href="/products" className={styles.card}>
-            Proyectos
-            <Image src={productos} width={50} height={50} alt='info' className={styles.icons} />
-          </Link>
-          <Link href="/contact" className={styles.card}>
-            Contacto
-            <Image src={contacto} width={50} height={50} alt='info' className={styles.icons} />
-          </Link>
+      </section>
+      <section className={styles.container}>
+        <div className={styles.text}>
+          <p>Soy especialista en desarrollo con Java y JavaScript,
+            con más de dos años de experiencia en el desarrollo de aplicaciones web, móviles y de escritorio.
+          </p>
         </div>
-        <div className={styles.responsiveInfo}>
-          <Link href="/about" className={styles.cardR}>
-            
-            <Image src={info} width={50} height={50} alt='info' className={styles.iconsR} />
-          </Link>
-          <Link href="/products" className={styles.cardR}>
-            
-            <Image src={productos} width={50} height={50} alt='info' className={styles.iconsR} />
-          </Link>
-          <Link href="/contact" className={styles.cardR}>
-            
-            <Image src={contacto} width={50} height={50} alt='info' className={styles.iconsR} />
-          </Link>
+      </section>
+      <section className={styles.container}>
+        <div className={styles.text}>
+          <p className={styles.answer}>¿Qué herramientas sé utilizar?</p>
+          <ul className={styles.list}>
+            <li>Java con Spring Boot</li>
+            <li>JavaScript con Angular, React, React Native y Ionic</li>
+            <li>Jasper Reports</li>
+            <li>MySQL y Oracle</li>
+          </ul>
+        </div>
+      </section>
+      <section className={styles.container}>
+        <div className={styles.text}>
+          <p className={styles.answer}>¿Qué experiencia tengo?</p>
+          <div className={styles.job}>
+            <p className={styles.title}>Becario Desarrollador Java</p>
+            <p className={styles.subtitle}>
+              Trabajé en <span className={styles.colorText}>GETechnologies</span> como becario,
+              donde realicé tareas de mantenimiento y desarrollo de nuevas funcionalidades en aplicaciones web (Spring Boot y Quarkus), y móviles
+              (React Native y Ionic).
+            </p>
+          </div>
+          <div className={styles.job}>
+            <p className={styles.title}>Desarrollador Java</p>
+            <p className={styles.subtitle}>
+              Actualmente trabajo en la <span className={styles.colorText}>Secretaría de Educación Pública</span> como desarrollador Java,
+              en el que doy mantenimiento y creo módulos según los nuevos requerimientos de la institución.
+            </p>
+          </div>
+          <div className={styles.job}>
+            <p className={styles.title}>Desarrollador independiente</p>
+            <p className={styles.subtitle}>
+              Actualmente trabajo en varios proyectos de manera paralela, tanto personales como de clientes temporales.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className={`${styles.container} ${styles.none}`}>
+        <div className={styles.text}>
+          <p className={styles.answer}>¿Dónde estudié?</p>
+          <div className={styles.job}>
+            <p className={styles.study}>
+              Estudié parcialmente la carrera de Ingeniería en Computación en la
+              <span className={styles.colorText}> Facultad de Estudios Superiores Aragón</span>
+            </p>
+          </div>
         </div>
       </section>
     </>

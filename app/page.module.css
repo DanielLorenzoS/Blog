@@ -1,17 +1,18 @@
+.text, .text {
+  font-size: 1.3rem;
+}
+
 .container {
   margin: auto;
-  /* height: 70vh; */
-  margin-top: 6rem;
-  width: 100%;
+  width: 50%;
   display: flex;
   gap: 4rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: monospace;
   cursor: default;
-  overflow: hidden;
+  border-bottom: 1px double #05828e;
 }
 
 .welcome {
@@ -26,9 +27,7 @@
 
 .logo {
   padding: 1rem;
-  margin-top: 2rem;
-  border-radius: 10rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+  margin: auto;
 }
 
 .title {
@@ -37,6 +36,8 @@
   align-items: center;
   font-size: 3rem;
   font-weight: 400;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 
 .subtitle {
@@ -51,16 +52,72 @@
 .info {
   width: 100%;
   display: flex;
-  gap: 3rem;
-  flex-direction: row;
+  gap: 1rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.text ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.answer {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 0;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-bottom: thin solid #ffffff;
+}
+
+.colorText {
+  color: #05828e;
+}
+
+.job {
+  display: flex;
+  font-display: column;
+}
+
+.job .title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+  width: 30%;
+}
+
+.job .subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 1rem;
+  text-align: center;
+  border-left: thin solid #ffffff;
+  width: 70%;
+}
+
+.study {
+  font-size: 1.3rem;
+}
+
+.none {
+  border-bottom: none;
+  margin-bottom: 1rem;
 }
 
 .card {
   background-image: linear-gradient(#5c0632, #381125, #151515);
   width: 18rem;
-  height: 18rem;
+  height: 8rem;
   font-size: 1.5rem;
   font-weight: 100 !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
@@ -73,7 +130,7 @@
   text-decoration: none;
   margin-top: 0;
   margin-bottom: 4rem;
-  border-radius: 100%;
+  border-radius: 10%;
   transform: translateY(30rem) rotateZ(25deg);
   transition: .4s ease-in-out;
   animation: move .6s ease-in-out .5s both;

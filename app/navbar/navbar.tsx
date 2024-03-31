@@ -24,7 +24,8 @@ export default function Navbar() {
         <>
             <nav className={styles.nav}>
                 <h1 className={styles["nav-h1"]}>
-                    LoreDev</h1>
+                    LORE
+                </h1>
                 <div className={styles.navs}>
                     <Link href="/">
                         <h2 className={styles["nav-h2"]}>Inicio</h2>

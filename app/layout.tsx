@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <title>LoreDev</title>
-        <link rel="icon" href="/loredev.ico" sizes="any" />
+        <title>Lore</title>
+        <link rel="icon" href="../public/LOREDEV_LOGO.png" sizes="any" />
       </head>
       <body className={inter.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
