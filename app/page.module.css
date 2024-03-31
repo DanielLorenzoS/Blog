@@ -164,7 +164,7 @@
   display: none;
 }
 
-@media (width < 900px) {
+/* @media (width < 900px) {
 
   .container {
     margin-top: 0;
@@ -213,5 +213,11 @@
 @media (width < 530px) {
   .cardR {
     flex-direction: column;
+  }
+} */
+
+@media (width < 800px) {
+  .container {
+    width: 90%;
   }
 }
