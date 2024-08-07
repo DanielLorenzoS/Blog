@@ -1,21 +1,75 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
-import logo from '../public/LOREDEV_LOGO.png'
+import github from '../public/github.svg'
+import linkedin from '../public/linkedin.svg'
+import React from 'react'
 
 export default function Home() {
+
+  const [active, setActive] = React.useState(1);
+
+  const handleClick = (index: number) => {
+    setActive(index);
+  };
+
   return (
     <>
+      <div className={styles.floating}>
+        <Image
+          className={`${styles.icon} ${active === 1 ? styles.active : ''}`}
+          src={github}
+          alt="github"
+          onClick={() => handleClick(1)}
+        />
+        <div className={styles.separator}></div>
+        <Image
+          className={`${styles.icon} ${active === 2 ? styles.active : ''}`}
+          src={github}
+          alt="github"
+          onClick={() => handleClick(2)}
+        />
+        <div className={styles.separator}></div>
+        <Image
+          className={`${styles.icon} ${active === 3 ? styles.active : ''}`}
+          src={github}
+          alt="github"
+          onClick={() => handleClick(3)}
+        />
+        <div className={styles.separator}></div>
+        <Image
+          className={`${styles.icon} ${active === 4 ? styles.active : ''}`}
+          src={github}
+          alt="github"
+          onClick={() => handleClick(4)}
+        />
+      </div>
       <section className={styles.container}>
         <div className={styles.welcome}>
           <div className={styles.info}>
-            <h1 className={styles.title}>
+            <span className={styles.detail}>
+              ¿Qué tal?, soy
+            </span>
+            <br />
+            <span className={styles.name}>
               Daniel Lorenzo
-            </h1>
-            <h2 className={styles.subtitle}>Desarrollador <span className={styles.colorText}>Java</span></h2>
+            </span>
+            <br />
+            <span className={styles.profession}>
+              Me gusta crear y romper código
+            </span>
+            <span className={styles.daily}>
+              Soy Desarrollador Backend especializado en Java, aunque de vez en cuando <br />
+              me gusta desarrollar un poco de Frontend, disfruto mucho el diseño <br />
+              Actualmente me estoy enfocando en aprender cosas más allá del código, como <br />
+              la gestión de proyectos, requerimientos y arquitectura de software.
+            </span>
+            <br />
+            <br />
           </div>
         </div>
       </section>
-      <section className={styles.container}>
+      {/* <section className={styles.container}>
         <div className={styles.text}>
           <p>Soy especialista en desarrollo con Java y JavaScript,
             con más de dos años de experiencia en el desarrollo de aplicaciones web, móviles y de escritorio.
@@ -69,7 +123,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

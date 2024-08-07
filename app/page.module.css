@@ -1,223 +1,102 @@
-.text, .text {
-  font-size: 1.3rem;
-}
-
 .container {
   margin: auto;
-  width: 50%;
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
   display: flex;
   gap: 4rem;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: default;
-  border-bottom: 1px double #05828e;
+  background-color: rgb(6, 66, 71);
 }
 
 .welcome {
-  margin: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 3rem;
-  text-align: center;
-}
-
-.logo {
+  background-color: rgba(26, 105, 110, 0.5);
   padding: 1rem;
-  margin: auto;
+  border-radius: 10px;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 400;
-  padding-bottom: .5rem;
-  margin-bottom: .5rem;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.blue {
-  color: #097188;
-}
+/* .welcome::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(5, 130, 142);
+  margin-top: 1rem;
+  animation: slideBorder 1s ease both;
+} */
 
 .info {
-  width: 100%;
+  font-size: 1.8rem;
+  color: #ccc;
+  text-align: left;
   display: flex;
-  gap: 1rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  gap: .3rem;
 }
 
-.text {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 1rem;
+.detail {
+  font-size: 1.2rem;
+  color: #cacde6;
 }
 
-.text ul {
-  list-style: none;
-  font-size: 1.3rem;
+.name {
+  color: rgb(224, 252, 255);
 }
 
-.answer {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 1rem 0;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 1rem;
-  border-bottom: thin solid #ffffff;
+.profession {
+  color: rgb(224, 252, 255, 0.7);
 }
 
-.colorText {
-  color: #05828e;
+.daily {
+  font-size: 1.2rem;
+  color: rgb(224, 252, 255, 0.6);
 }
 
-.job {
-  display: flex;
-  font-display: column;
-}
-
-.job .title {
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding: 1rem;
-  width: 30%;
-}
-
-.job .subtitle {
-  font-size: 1.1rem;
-  font-weight: 300;
-  padding: 1rem;
-  text-align: center;
-  border-left: thin solid #ffffff;
-  width: 70%;
-}
-
-.study {
-  font-size: 1.3rem;
-}
-
-.none {
-  border-bottom: none;
-  margin-bottom: 1rem;
-}
-
-.card {
-  background-image: linear-gradient(#5c0632, #381125, #151515);
-  width: 18rem;
-  height: 8rem;
-  font-size: 1.5rem;
-  font-weight: 100 !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 4rem;
-  border-radius: 10%;
-  transform: translateY(30rem) rotateZ(25deg);
-  transition: .4s ease-in-out;
-  animation: move .6s ease-in-out .5s both;
-}
-
-@keyframes move {
+@keyframes slideBorder {
   0% {
-    transform: translateY(30rem) rotateZ(25deg);    
+    width: 0%;
   }
 
   100% {
-    transform: translateY(-2rem) rotateZ(0);
-  }
-}
-
-.card:nth-child(2) {
-  margin-top: 4rem;
-  margin-bottom: 0;
-}
-
-.icons {
-  background-color: transparent;
-  transition: .4s ease-in-out;
-}
-
-.card:hover .icons {
-  transform: rotateZ(25deg);
-}
-
-.responsiveInfo {
-  display: none;
-}
-
-/* @media (width < 900px) {
-
-  .container {
-    margin-top: 0;
-  }
-
-  .welcome {
-    flex-direction: column;
-    gap: 1rem;
-    height: 100vh;
-  }
-
-  .info {
-    display: none;
-  }
-
-  .responsiveInfo {
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-  }
-  .cardR {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    padding: 1rem;
-    border-top: thin solid white;
-  }
-  .cardR:nth-child(2) {
-    width: 34%;
-    border-left: thin solid white;
-    border-right: thin solid white;
-  }
-  .cardR:nth-child(2) .iconsR {
-    background-color: transparent;
   }
 }
 
-@media (width < 530px) {
-  .cardR {
-    flex-direction: column;
-  }
-} */
+.floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
 
-@media (width < 800px) {
-  .container {
-    width: 90%;
-  }
+.icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.separator {
+  min-width: 1.8px;
+  height: 3%;
+  margin-top: -1.5%;
+  margin-bottom: -1.5%;
+  background-color: white;
+  z-index: -1;
 }
