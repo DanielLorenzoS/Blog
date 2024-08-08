@@ -1,4 +1,5 @@
 .container {
+  scroll-behavior: smooth;
   margin: auto;
   padding: 1rem;
   width: 100%;
@@ -17,16 +18,6 @@
   padding: 1rem;
   border-radius: 10px;
 }
-
-/* .welcome::after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: rgb(5, 130, 142);
-  margin-top: 1rem;
-  animation: slideBorder 1s ease both;
-} */
 
 .info {
   font-size: 1.8rem;
@@ -66,7 +57,7 @@
 }
 
 .floating {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 10%;
@@ -99,4 +90,13 @@
   margin-bottom: -1.5%;
   background-color: white;
   z-index: -1;
+}
+
+@media (width < 1030px) {
+  .floating {
+    display: none;
+  }
+  .welcome {
+    padding: 0.5rem 1.5rem;
+  }
 }
