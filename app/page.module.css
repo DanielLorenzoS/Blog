@@ -182,11 +182,30 @@
 }
 
 @media (width < 700px) {
+  .container {
+    min-height: 50vh;
+  }
   .welcome {
     width: 90%;
   }
 
+  .info {
+    text-align: center;
+    padding-top: .8rem;
+  }
+
+  .titleJob {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profession {
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+  }
+
   .daily {
-    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2;
   }
 }

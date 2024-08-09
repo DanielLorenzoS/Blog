@@ -198,7 +198,7 @@ export default function Home() {
             <span className={styles.titleJob}>
               ¿Qué hago en mi tiempo libre?
             </span>
-            <span className={styles.position}>
+            <span className={styles.titleJob}>
               Videojuegos
             </span>
             <span className={styles.daily}>
@@ -208,7 +208,7 @@ export default function Home() {
             </span>
             <br />
             <br />
-            <span className={styles.position}>
+            <span className={styles.titleJob}>
               Programar
             </span>
             <span className={styles.daily}>
@@ -217,7 +217,7 @@ export default function Home() {
             </span>
             <br />
             <br />
-            <span className={styles.position}>
+            <span className={styles.titleJob}>
               Música
             </span>
             <span className={styles.daily}>
