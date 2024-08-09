@@ -7,6 +7,7 @@ import profile from '../public/profile.svg'
 import experience from '../public/briefcase.svg'
 import education from '../public/education.svg'
 import games from '../public/games.svg'
+import pet from '../public/pet.svg'
 import React, { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
           setActive(index);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
     document.querySelectorAll('section').forEach((section) => {
       observer.observe(section);
@@ -63,6 +64,13 @@ export default function Home() {
           src={games}
           alt="games"
           onClick={() => handleClick(4)}
+        />
+        <div className={styles.separator}></div>
+        <Image
+          className={`${styles.icon} ${active === 5 ? styles.active : ''}`}
+          src={pet}
+          alt="pet"
+          onClick={() => handleClick(5)}
         />
       </div>
       <section className={styles.container} id='section1'>
@@ -165,7 +173,7 @@ export default function Home() {
       <section className={styles.container} id='section3'>
         <div className={styles.welcome}>
           <div className={styles.info}>
-          <span className={styles.titleJob}>
+            <span className={styles.titleJob}>
               Facultad de Estudios Superiores Aragón (UNAM)
             </span>
             <span className={styles.position}>
@@ -174,9 +182,9 @@ export default function Home() {
             <span className={styles.daily}>
               En mi carrera aprendí cosas muy importantes para el desarrollo de software,
               como estructuras de datos, algoritmos, programación orientada a objetos,
-              bases de datos, entre otras cosas materias como robótica, arduino, etc. 
-              Aprendí a trabajar en equipo y a seguir buenas prácticas de programación, 
-              así como nunca dejar de aprender. Sin embargo, por cuestiones económicas, 
+              bases de datos, entre otras cosas materias como robótica, arduino, etc.
+              Aprendí a trabajar en equipo y a seguir buenas prácticas de programación,
+              así como nunca dejar de aprender. Sin embargo, por cuestiones económicas,
               no la pude concluir, terminando hasta finales de séptimo semestre.
             </span>
             <br />
@@ -187,25 +195,110 @@ export default function Home() {
       <section className={styles.container} id='section4'>
         <div className={styles.welcome}>
           <div className={styles.info}>
-            <span className={styles.detail}>
-              ¿Qué tal?, soy
+            <span className={styles.titleJob}>
+              ¿Qué hago en mi tiempo libre?
             </span>
-            <br />
-            <span className={styles.name}>
-              Daniel Lorenzo
-            </span>
-            <br />
-            <span className={styles.profession}>
-              Me gusta crear y romper código
+            <span className={styles.position}>
+              Videojuegos
             </span>
             <span className={styles.daily}>
-              Soy Desarrollador Backend especializado en Java, aunque de vez en cuando
-              me gusta desarrollar un poco de Frontend, disfruto mucho el diseño
-              Actualmente me estoy enfocando en aprender cosas más allá del código, como
-              la gestión de proyectos, requerimientos y arquitectura de software.
+              Me encanta jugar videojuegos, últimamente juego mucho en multijuagdor,
+              específicamente Halo Infinite, aunque también juego otros juegos como
+              Minecraft, Assassin's Creed, Dead Space, entre otros.
             </span>
             <br />
             <br />
+            <span className={styles.position}>
+              Programar
+            </span>
+            <span className={styles.daily}>
+              Me gusta mucho programar y tengo un par de proyectos personales en los que
+              trabajo de vez en cuando, eso sí, siempre cuidando no quemarme.
+            </span>
+            <br />
+            <br />
+            <span className={styles.position}>
+              Música
+            </span>
+            <span className={styles.daily}>
+              Me gusta mucho escuchar música, siempre que puedo tengo música de fondo,
+              y de vez en cuando disfruto de practicar un poco de violín, aunque
+              eso sí, no esperen más que un "Estrellita dónde estás" y aun así
+              posiblemente desafine un poco.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section className={styles.container} id='section5'>
+        <div className={styles.welcome}>
+          <div className={styles.info}>
+            <span className={styles.titleJob}>
+              ¿Una sección para mis mascotas?
+            </span>
+            <span className={styles.daily}>
+              Siempre que puedo me gusta pasar tiempo con mis mascotas,
+              son parte de mí y mi familia.
+            </span> <br />
+            <span className={styles.titleJob}>
+              Harry
+            </span>
+            <span className={styles.daily}>
+              Harry es el típico perro mexicano mediano, blanco con pelo chino,
+              nacido en el 2015, es muy encimoso, cariñoso y un poco
+              consentido (mucho).
+            </span>
+            <br />
+            <br />
+            <span className={styles.titleJob}>
+              Hachi
+            </span>
+            <span className={styles.daily}>
+              Hachi es un husky siberiano, nacido en el 2018, es muy juguetón,
+              cariñoso y sobre todo muy travieso, siempre está buscando algo
+              que romper, así que necesita tener peluches al alcance.
+            </span>
+            <br />
+            <br />
+            <span className={styles.titleJob}>
+              Kira
+            </span>
+            <span className={styles.daily}>
+              Kira es una gata blanca con ojos azules, nacida en el 2020,
+              tiene un caracter muy fuerte, es muy cariñosa y obediente.
+            </span>
+            <br />
+            <br />
+            <span className={styles.titleJob}>
+              Nube
+            </span>
+            <span className={styles.daily}>
+              Nube es una gata blanca con ojos azules, hermana de sangre
+              de Kira, nacida en el 2020, es extremadamente cariñosa, 
+              siempre acepta cariño y espera estar acompañada para cada
+              parte de su día.
+            </span>
+            <br />
+            <br />
+            <span className={styles.titleJob}>
+              Luna
+            </span>
+            <span className={styles.daily}>
+              Luna es una gata tuxedo (vaquita), nacida aproximadamente
+              a finales del 2020, es extremadamente juquetona, no le gusta 
+              tanto el cariño, pero siempre que ve a alguien acostado
+              se acerca a dormir con esa persona.
+            </span>
+            <br />
+            <br />
+            <span className={styles.titleJob}>
+              Luz
+            </span>
+            <span className={styles.daily}>
+              Luz era una gata doméstico europeo, nacida en el 2022,
+              era una incréible combinación de cariño y energía, siempre
+              estaba buscando jugar, sobre todo con su hermana Luna y 
+              disfrutaba de dormir sobre mi espalda toda la noche.
+            </span>
           </div>
         </div>
       </section>
