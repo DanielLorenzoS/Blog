@@ -2,8 +2,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import github from '../public/github.svg'
-import contact from '../public/contact.svg'
+import linkedin from '../public/linkedin.svg'
+import whatsapp from '../public/whatsapp.svg'
 import profile from '../public/profile.svg'
+import pdf from '../public/pdf.svg'
 import experience from '../public/briefcase.svg'
 import education from '../public/education.svg'
 import games from '../public/games.svg'
@@ -85,17 +87,44 @@ export default function Home() {
             </span>
             <br />
             <span className={styles.profession}>
-              Me gusta crear y romper código
+              Desarrollador Backend
             </span>
             <span className={styles.daily}>
-              Soy Desarrollador Backend especializado en Java con más de 2 años de experiencia,
-              aunque de vez en cuando desarrollo un poco de Frontend ya sea por trabajo así como
-              para proyectos personales, disfruto mucho el diseño y la experiencia de usuario.
+              Soy especializado en Java con Spring Boot con más de 2 años de experiencia,
+              también de vez en cuando desarrollo un poco de Frontend con Angular ya sea por trabajo
+              así como para proyectos personales, disfruto mucho el diseño y la experiencia de usuario. <br />
               Actualmente me estoy enfocando en aprender cosas más allá del código, como
-              la gestión de proyectos, requerimientos y arquitectura de software.
+              la comunicación con los clientes y sus requerimientos, arquitectura de software y
+              patrones de diseño, además de mejorar mis conversaciones en inglés.
             </span>
             <br />
             <br />
+            <div className={styles.contact}>
+              <Image
+                className={styles.iconContact}
+                src={github}
+                alt="contact"
+                onClick={() => window.open('https://github.com/DanielLorenzoS')}
+              />
+              <Image
+                className={styles.iconContact}
+                src={linkedin}
+                alt="contact"
+                onClick={() => window.open('https://www.linkedin.com/in/daniellorenzos/')}
+              />
+              <Image
+                className={styles.iconContact}
+                src={whatsapp}
+                alt="contact"
+                onClick={() => window.open('https://wa.me/5514979609')}
+              />
+              <Image
+                className={styles.iconContact}
+                src={pdf}
+                alt="contact"
+                onClick={() => window.open('https://drive.google.com/file/d/1gylq3PmXfVpDEU0VkzCSdaBsPnNtH5J4/view?usp=sharing')}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -113,9 +142,9 @@ export default function Home() {
               Becario Java | 2022 - 2023
             </span>
             <span className={styles.daily}>
-              En este trabajo di mis primeros pasos en el mundo laboral,
-              aprendiendo mucho sobre el desarrollo de software,
-              tanto en el backend como en el frontend, aprendiendo
+              En este trabajo di mis primeros pasos en el mundo laboral como Desarrollador de Software,
+              aprendiendo mucho sobre el mismo,
+              tanto en el BackEnd como en el FrontEnd, aprendiendo
               también a trabajar en equipo y a seguir buenas prácticas de
               programación.
             </span>
@@ -273,7 +302,7 @@ export default function Home() {
             </span>
             <span className={styles.daily}>
               Nube es una gata blanca con ojos azules, hermana de sangre
-              de Kira, nacida en el 2020, es extremadamente cariñosa, 
+              de Kira, nacida en el 2020, es extremadamente cariñosa,
               siempre acepta cariño y espera estar acompañada para cada
               parte de su día.
             </span>
@@ -284,7 +313,7 @@ export default function Home() {
             </span>
             <span className={styles.daily}>
               Luna es una gata tuxedo (vaquita), nacida aproximadamente
-              a finales del 2020, es extremadamente juquetona, no le gusta 
+              a finales del 2020, es extremadamente juquetona, no le gusta
               tanto el cariño, pero siempre que ve a alguien acostado
               se acerca a dormir con esa persona.
             </span>
@@ -296,7 +325,7 @@ export default function Home() {
             <span className={styles.daily}>
               Luz era una gata doméstico europeo, nacida en el 2022,
               era una incréible combinación de cariño y energía, siempre
-              estaba buscando jugar, sobre todo con su hermana Luna y 
+              estaba buscando jugar, sobre todo con su hermana Luna y
               disfrutaba de dormir sobre mi espalda toda la noche.
             </span>
           </div>
